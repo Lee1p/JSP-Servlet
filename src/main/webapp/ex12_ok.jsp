@@ -34,7 +34,14 @@
 	<script src="https://kit.fontawesome.com/7121714adf.js"></script>
 	<style>
 		.button {
-			 
+			padding-left: 0px;
+		}
+		.button::before {
+			content: none;
+		}
+		
+		.button {
+		 
 			width: <%= width %>px;
 			height: <%= height %>px;
 			background-color: <%= backgroundcolor %>;
@@ -85,6 +92,22 @@
 			</td>
 		</tr>
 	</table>
+	
+	<div>
+		<input type="button" value="돌아가기" onclick="location.href='ex12_form.jsp';">
+	</div>
+	
+	<hr>
+	
+	
+	<div>
+	<h5>결과 페이지에 아래 CSS 적용할 것</h5>
+	<textarea class="full">.button {
+	padding-left: 0px;
+}
+.button::before {
+	content: none;
+}</textarea></div>
 	
 	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	<script src="https://bit.ly/4cMuheh"></script>
